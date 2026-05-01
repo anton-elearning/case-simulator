@@ -32,25 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================================
 const BOT_IMGS = {
   Light: {
-    avatar:     'https://static.tildacdn.com/tild6662-3534-4865-a161-613831333432/bot1-4.png',
-    win:        'https://static.tildacdn.com/tild3363-3662-4934-b039-396331656263/bot1-2.png',
-    lose:       'https://static.tildacdn.com/tild3265-3039-4430-b836-376662623434/bot1-1.png',
-    tie_wrong:  'https://static.tildacdn.com/tild6662-3534-4865-a161-613831333432/bot1-4.png',
-    tie_correct:'https://static.tildacdn.com/tild3834-6138-4562-a336-373335323665/bot1-3.png'
+    avatar:     'https://static.tildacdn.com/tild3664-3062-4435-b539-623461353437/bot1-4.png',
+    win:        'https://static.tildacdn.com/tild6231-6135-4234-a238-613034346434/bot1-2.png',
+    lose:       'https://static.tildacdn.com/tild3465-6534-4633-b131-633234636239/bot1-1.png',
+    tie_wrong:  'https://static.tildacdn.com/tild3664-3062-4435-b539-623461353437/bot1-4.png',
+    tie_correct:'https://static.tildacdn.com/tild3137-3131-4964-b533-323662626364/bot1-3.png'
   },
   Medium: {
-    avatar:     'https://static.tildacdn.com/tild6632-6264-4232-b038-636165313332/bot2-1.png',
-    win:        'https://static.tildacdn.com/tild6537-3561-4362-a436-323438303936/bot2-4.png',
-    lose:       'https://static.tildacdn.com/tild6632-6264-4232-b038-636165313332/bot2-1.png',
-    tie_wrong:  'https://static.tildacdn.com/tild6537-3561-4362-a436-323438303936/bot2-4.png',
-    tie_correct:'https://static.tildacdn.com/tild3063-6135-4730-b962-396561663032/bot2-3.png'
+    avatar:     'https://static.tildacdn.com/tild3361-6139-4535-a330-313237343232/bot2-4png.png',
+    win:        'https://static.tildacdn.com/tild3730-3862-4264-b932-393861373434/bot2-2.png',
+    lose:       'https://static.tildacdn.com/tild3835-3330-4462-b434-663131303434/bot2-1png.png',
+    tie_wrong:  'https://static.tildacdn.com/tild3361-6139-4535-a330-313237343232/bot2-4png.png',
+    tie_correct:'https://static.tildacdn.com/tild3563-6234-4634-a437-613535323935/bot2-3png.png'
   },
   Super: {
-    avatar:     'https://static.tildacdn.com/tild6263-3861-4530-a332-323162373864/bot3-2.png',
-    win:        'https://static.tildacdn.com/tild6263-3861-4530-a332-323162373864/bot3-2.png',
-    lose:       'https://static.tildacdn.com/tild3230-3737-4766-b332-663530383137/bot3-1.png',
-    tie_wrong:  'https://static.tildacdn.com/tild3738-3962-4861-b531-333739376534/bot3-4.png',
-    tie_correct:'https://static.tildacdn.com/tild6530-3066-4236-a133-366436326336/bot3-3.png'
+    avatar:     'https://static.tildacdn.com/tild3733-3265-4135-a534-346530633361/bot3-4.png',
+    win:        'https://static.tildacdn.com/tild3735-3132-4432-b934-313936663536/bot3-2.png',
+    lose:       'https://static.tildacdn.com/tild3666-6334-4064-b161-333565633334/bot3-1.png',
+    tie_wrong:  'https://static.tildacdn.com/tild3733-3265-4135-a534-346530633361/bot3-4.png',
+    tie_correct:'https://static.tildacdn.com/tild6632-3963-4535-b436-626238343935/bot3-3.png'
   }
 };
 
