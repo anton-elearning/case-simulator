@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кибер-симулятор</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="scanline"></div>
+<div class="app">
+
+  <!-- СЛАЙД 1: УРОВЕНЬ СЛОЖНОСТИ -->
+  <div id="slide-diff" class="slide active">
+    <h2>Выберите уровень сложности</h2>
+    <div class="difficulty-grid">
+      <div class="diff-card" id="card-light" onclick="pickDifficulty('Light','card-light')">
+        <h3>Light</h3>
+        <img src="https://static.tildacdn.com/tild6662-3534-4865-a161-613831333432/bot1-4.png" alt="Light">
+      </div>
+      <div class="diff-card" id="card-medium" onclick="pickDifficulty('Medium','card-medium')">
+        <h3>Medium</h3>
+        <img src="https://static.tildacdn.com/tild6632-6264-4232-b038-636165313332/bot2-1.png" alt="Medium">
+      </div>
+      <div class="diff-card" id="card-super" onclick="pickDifficulty('Super','card-super')">
+        <h3>Super</h3>
+        <img src="https://static.tildacdn.com/tild6263-3861-4530-a332-323162373864/bot3-2.png" alt="Super">
+      </div>
+    </div>
+    <button class="action-btn" id="btn-start" disabled onclick="goTopics()">Начать загрузку</button>
+  </div>
+
+  <!-- СЛАЙД 2: ВЫБОР ТЕМЫ -->
+  <div id="slide-topics" class="slide">
+    <h2>Выбор базы данных</h2>
+    <div class="topics-grid" id="topics-grid"></div>
+  </div>
+
+  <!-- СЛАЙД 3: ПОЕДИНОК -->
+  <div id="slide-quiz" class="slide">
+    <div class="quiz-header">
+      <div class="q-counter">Вопрос <span id="q-num">1</span> / <span id="q-total">10</span></div>
+      <div class="scoreboard">
+        <div><span class="score-label">ТЫ: </span><span class="score-val" id="score-u">0</span></div>
+        <div><span class="score-label">БОТ: </span><span class="score-val" id="score-b">0</span></div>
+      </div>
+    </div>
+    <div class="question-text" id="question-text"></div>
+    <div class="options-list" id="options-list"></div>
+    <button class="action-btn" id="btn-confirm" disabled onclick="submitAnswer()">Подтвердить ответ</button>
+    <div class="round-box" id="round-box">
+      <img id="bot-reaction" src="" alt="Bot">
+      <p id="round-desc"></p>
+      <button class="action-btn" onclick="nextQuestion()">Следующий вопрос</button>
+    </div>
+  </div>
+
+  <!-- СЛАЙД 4: ФИНАЛ -->
+  <div id="slide-final" class="slide">
+    <h2>Симуляция завершена</h2>
+    <div class="final-winner" id="final-title"></div>
+    <div class="final-scores">
+      Твой счёт: <strong id="final-u" style="color:var(--correct)">0</strong><br>
+      Счёт бота: <strong id="final-b" style="color:var(--wrong)">0</strong>
+    </div>
+        <button class="action-btn" onclick="location.reload()">Начать заново</button>
+    <button class="action-btn" style="margin-top: 16px;" onclick="window.location.href='https://anton-elearning.tilda.ws/hostingpic'">Другие тренажеры</button>
+  </div>
+
+</div><!-- /.app -->
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
